@@ -5,7 +5,10 @@ from lab7_1 import MinHeap, insert, extract, heapify_up, heapify_down
 
 class TestMinHeap(unittest.TestCase):
     def test_insert(self):
-        pass
+        minheap = [3, 10, 7, 10, 12, 8, 7]
+        result = test_insert(minheap, 2)
+        self.assertEqual(result, [2, 3, 10, 7, 10, 12, 8, 7])
+
 
     def test_insert_multiple(self):
         pass
